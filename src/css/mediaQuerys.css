@@ -1,0 +1,66 @@
+
+/* CSS para telas grandes */
+@media screen and (min-width: 1024px) {
+    .main-container {
+        margin-left: 320px;
+        margin-right: 56px;
+    }
+}
+
+/* CSS para telas médias */
+@media screen and (max-width: 1379px) {
+    .main-container {
+        margin-left: 320px;
+        margin-right: 56px;
+        width: 100%;
+    }
+
+    .section-cards  {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width:1001px) {
+    .section-cards  {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+/* CSS para telas pequenas */
+@media screen and (max-width: 766px) {
+    .main-container {
+        margin-left: 320px;
+        margin-right: 56px;
+        width: 100%;
+    }
+
+    .section-cards  {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .header__subscribe-login{
+        display: none;
+    }
+
+    .subscribe_button-sidebar{
+        display: flex;
+    }
+
+    .login_button-sidebar{
+        display: flex;
+    }
+
+    .header__search{
+        margin-right: 100px;
+    }
+
+}
+
+
+@media screen and (max-width: 488px) {
+    .header__search{
+        width: 300px;
+        height: 48px;
+        margin-left: 8px;
+    }
+}

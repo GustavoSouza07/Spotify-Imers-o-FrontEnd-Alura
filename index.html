@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Css -->
+    <link rel="stylesheet" href="./src/css/vars.css">
+    <link rel="stylesheet" href="./src/css/sidebar-footer.css">
+    <link rel="stylesheet" href="./src/css/main-content.css">
+    <link rel="stylesheet" href="./src/css/mediaQuerys.css">
+    <!-- Reset Css -->
+    <link rel="stylesheet" href="/src/css/reset.css">
+    <!-- Icon favicon -->
+    <link rel="shortcut icon" href="/src/assets/icons/favicon.png" type="image/x-icon">
+    <!-- CDN'S -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/solid.css"
+    integrity="sha384-Tv5i09RULyHKMwX0E8wJUqSOaXlyu3SQxORObAI08iUwIalMmN5L6AvlPX2LMoSE" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/fontawesome.css"
+    integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Spotify</title>
+</head>
+<body>
+    <div class="sidebar">
+        <nav class="sidebar_navigation">
+            <div class="logo">
+                <a href="#">
+                    <img src="/src/assets/icons/logo-spotify.png" alt="">
+                </a>
+            </div>   
+            <div>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <!-- cdn aqui abaixo -->
+                            <span class="fas fa-home"></span>
+                            <span>Início</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="fas fa-search"></span>
+                            <span>Buscar</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <nav class="library">
+            <div class="library__content">
+                <button class="library__button">
+                    <span class="fas fa-book"></span>
+                    <span>Sua biblioteca</span>
+                </button>
+                <span class="fas fa-plus"></span>
+            </div>
+
+            <section class="section_playlist">
+                <div class="section_playlist_content">
+                    <p id="text_title_playlist">Crie sua primeira playlist</p>
+                    <p id="text_subtitle_playlist">É facil vamos te ajudar.</p>
+                    
+                    <button class="create_playlist_button">
+                        <span>Criar playlist</span>
+                    </button>
+                </div>
+            </section>
+
+            <div class="cookies">
+                <a target="_blank" href="https://www.spotify.com/br-pt/legal/cookies-policy/">Cookies</a>
+            </div>
+
+            <button class="language_button">
+                <span class="fas fa-globe"></span>
+                <span>Português do Brasil</span>
+            </button>
+
+            <button class="subscribe_button-sidebar">
+                <span>Inscreva-se</span>
+            </button>
+
+            <button class="login_button-sidebar">
+                <span>Entrar</span>
+            </button>
+        </nav>
+    </div>
+
+    <main class="teste">
+        <div class="main-container">
+                <nav class="header">
+                    <div class="navigation">
+                        <button class="arrow-left">
+                            <img src="./src/assets/icons/small-left.png" alt="Seta esquerda">
+                        </button>
+                        <button class="arrow-right">
+                            <img src="./src/assets/icons/small-right.png" alt="Seta direita">
+                        </button>
+                    </div>
+                    <div class="header__search">
+                        <img src="./src/assets/icons/search.png" alt="">
+                        <input id="search-input" type="text" maxlength="800" placeholder="O que você quer ouvir?" />
+                    </div>
+                    <div class="header__subscribe-login">
+                        <button class="subscribe">Inscreva-se</button>
+                        <button class="login">Entrar</button>
+                    </div>
+                    <!-- <div>
+                        <button class="login">Entrar</button>
+                    </div> -->
+                </nav>
+
+            <div class="container_content">
+                <div class="content">
+                    <div class="text_content">
+                        <h1>Bom dia</h1>
+                        <h2>Navegar por todas as seções</h2>
+                    </div>
+                </div>
+
+                <div class="container-cards">
+                    <div class="cards-list">
+                        <section class="section-cards">
+                            
+                            <a href="" class="cards">
+                                <div class="cards card1">
+                                    <span>Boas Festas</span>
+                                    <img src="/src/assets/playlist/1.jpeg" alt="">
+                                </div>
+                            </a>
+                            
+                            <a href="" class="cards">
+                                <div class="cards card2">
+                                    <span>Feitos para você</span>
+                                    <img src="src/assets/playlist/2.png" alt="">
+                                </div>
+                            </a>
+
+                            <a href="" class="cards">
+                                <div class="cards card3">
+                                    <span>Lançamentos</span>
+                                    <img src="src/assets/playlist/3.jpeg" alt="">
+                                </div>
+                            </a>
+
+                            <a href="" class="cards">
+                                <div class="cards card4">
+                                    <span>Conecte-se</span>
+                                    <img src="src/assets/playlist/4.jpeg" alt="">
+                                </div>
+                            </a>
+
+                            <a href="" class="cards">
+                                <div class="cards card5">
+                                    <span>Motivação</span>
+                                    <img src="src/assets/playlist/5.jpeg" alt="">
+                                </div>
+                            </a>
+
+                            <a href="" class="cards">
+                                <div class="cards card6">
+                                    <span>Eletronica</span>
+                                    <img src="src/assets/playlist/6.jpeg" alt="">
+                                </div>
+                            </a>
+
+                            <a href="" class="cards">
+                                <div class="cards card7">
+                                    <span>Sertanejo na veia</span>
+                                    <img src="src/assets/playlist/7.jpeg" alt="">
+                                </div>
+                            </a>
+
+                            <a href="" class="cards">
+                                <div class="cards card8">
+                                    <span>Seleção Pagode</span>
+                                    <img src="src/assets/playlist/8.jpeg" alt="">
+                                </div>
+                            </a>
+
+                            <a href="" class="cards">
+                                <div class="cards card9">
+                                    <span>Funk</span>
+                                    <img src="src/assets/playlist/9.jpeg" alt="">
+                                </div>
+                            </a>
+
+                            <a href="" class="cards">
+                                <div class="cards card10">
+                                    <span>Aquarela music</span>
+                                    <img src="src/assets/playlist/10.jpeg" alt="">
+                                </div>
+                            </a>
+
+                            <a href="" class="cards">
+                                <div class="cards card11">
+                                    <span>Rock</span>
+                                    <img src="src/assets/playlist/11.jpeg" alt="">
+                                </div>
+                            </a>
+
+                            <a href="" class="cards">
+                                <div class="cards card12">
+                                    <span>Hip Hop</span>
+                                    <img src="src/assets/playlist/12.jpeg" alt="">
+                                </div>
+                            </a>
+
+                            <a href="" class="cards">
+                                <div class="cards card13">
+                                    <span>Internacional music</span>
+                                    <img src="src/assets/playlist/13.jpeg" alt="">
+                                </div>
+                            </a>
+
+                            <a href="" class="cards">
+                                <div class="cards card14">
+                                    <span>Chill Vibes</span>
+                                    <img src="src/assets/playlist/14.jpeg" alt="">
+                                </div>
+                            </a>
+
+                            <a href="" class="cards">
+                                <div class="cards card15">
+                                    <span>Música Latina</span>
+                                    <img src="src/assets/playlist/15.jpeg" alt="">
+                                </div>
+                            </a>
+                        </section>
+                    </div>
+                </div>
+            </div>
+            <div id="result-artist" class="hidden">
+                    <div class="grid-container">
+                        <div class="artist-card" id="">
+                            <div class="card-img">
+                                <img id="artist-img" class="artist-img" />
+                                <div class="play">
+                                    <span class="fa fa-solid fa-play"></span>
+                                </div>
+                            </div>
+                            <div class="card-text">
+                                <a title="Foo Fighters" class="vst" href=""></a>
+                                <span class="artist-name" id="artist-name"></span>
+                                <span class="artist-categorie">Artista</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </main>
+
+    <footer class="struct_footer">
+        <div class="content_footer">
+            <p>TESTAR O PREMIUM DE GRAÇA</p>
+            <P>Inscreva-se para curtir música ilimitada e podcasts só com alguns anúncios. Não precisa de cartão de crédito.</P>
+        </div>
+        <div class="button_footer">
+            <button>
+                <span>Inscreva-se grátis</span>
+            </button>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="./src/js/main.js"></script>
+</body>
+</html>
