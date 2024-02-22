@@ -1,66 +1,107 @@
-
-/* CSS para telas grandes */
-@media screen and (min-width: 1024px) {
+/* TELAS GRANDES */
+@media only screen and (max-width:1301px){
+    .sidebar {
+        width: 240px;
+    }
+    .library__content .fa-plus {
+        margin-left: 5px;
+    }
     .main-container {
-        margin-left: 320px;
-        margin-right: 56px;
+        margin-left: 240px;
+    }
+    
+
+
+    /* Card container main */
+    .section-cards{
+        grid-template-columns: 1fr 1fr 1fr;
+
     }
 }
 
-/* CSS para telas médias */
-@media screen and (max-width: 1379px) {
-    .main-container {
-        margin-left: 320px;
-        margin-right: 56px;
-        width: 100%;
-    }
-
-    .section-cards  {
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-    }
-}
-
-@media only screen and (max-width:1001px) {
-    .section-cards  {
-      grid-template-columns: 1fr 1fr 1fr;
-    }
-}
-
-/* CSS para telas pequenas */
-@media screen and (max-width: 766px) {
-    .main-container {
-        margin-left: 320px;
-        margin-right: 56px;
-        width: 100%;
-    }
-
-    .section-cards  {
-      grid-template-columns: 1fr 1fr;
-    }
-
-    .header__subscribe-login{
+/* TELAS MEDIAS */
+@media only screen and (max-width:995px){
+    .header__subscribe-login {
         display: none;
+    }
+
+    .login_button-sidebar{
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .subscribe_button-sidebar{
         display: flex;
     }
 
-    .login_button-sidebar{
-        display: flex;
+    .header__search {
+        margin-right: 239px;
     }
 
-    .header__search{
-        margin-right: 100px;
+    .cards{
+        width: 180px;
+    }
+
+    .library {
+        height: 420px;
+    }
+
+    .main-container {
+        width: 100%;
+    }
+
+}
+
+@media only screen and (max-width:885px){
+    .cards{
+        width: 180px;
+    }
+    .section-cards {
+    grid-template-columns: 1fr 1fr;
     }
 
 }
 
 
-@media screen and (max-width: 488px) {
-    .header__search{
-        width: 300px;
-        height: 48px;
-        margin-left: 8px;
+
+/* TELAS PEQUENAS */
+@media only screen and (max-width:485px){
+    .sidebar{
+        display: none;
     }
+    
+    .main-container {
+        margin-left: 0px;
+    }
+
+    .header__search {
+        width: 230px;
+    }
+
+    .content_footer p {
+        padding: 2px;
+        font-weight: 200;
+    }
+
+    .button_footer {
+        margin-right: 0px;
+        padding: 7px;
+    }
+    .cards {
+        width: 290px;
+        height: 170px;
+    }
+    .section-cards {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+    
+
+@media screen and (width: 820px) and (height: 1180px) {
+  .main-container{
+    width: auto;
+  }
 }
